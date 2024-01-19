@@ -1,4 +1,3 @@
-// script.js
 console.log("Script loaded successfully!");
 console.log("Wuyuan Gao");
 
