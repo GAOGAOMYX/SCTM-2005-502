@@ -1,0 +1,188 @@
+/* style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 游戏展示区样式 */
+#favorite-games {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 灵活的网格布局 */
+    grid-gap: 20px; /* 格子之间的间距 */
+    padding: 20px;
+    text-align: center;
+}
+
+.game {
+    background-color: #f8f8f8;
+    border: 1px solid #eaeaea;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px; /* 圆角边框 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 轻微的阴影效果 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* 过渡效果 */
+}
+
+.game:hover {
+    transform: translateY(-5px); /* 鼠标悬浮时轻微上移 */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.game img {
+    max-width: 100%; /* 图片最大宽度 */
+    height: 125px; /* 高度自适应 */
+    border-radius: 5px; /* 图片圆角 */
+}
+
+.game-title {
+    font-size: 1.1em;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* 标题样式 */
+h1 {
+    font-family: 'Arial', sans-serif;
+    color: #2c3e50;
+    text-align: center;
+    font-size: 3em; /* 更大的字号 */
+    font-weight:bolder;
+    margin-top: 50px; /* 增加与页面顶部的间距 */
+}
+
+/* 链接样式 */
+p {
+    font-family: 'Verdana', sans-serif;
+    color: #34495e;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+a {
+    color: #ffffff; /* 醒目的链接颜色 */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff0000; /* 鼠标悬浮时的颜色 */
+    text-decoration: underline;
+    transition: color 0.3s; /* 平滑的颜色过渡效果 */
+}
+
+/* 列表项样式 */
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* 居中对齐 */
+}
+
+li {
+    display: inline-block; /* 使列表项成为内联块元素 */
+    margin: 10px; /* 添加一些间距 */
+}
+
+li a {
+    background-color: #007bff; /* 背景色 */
+    color: white; /* 文字颜色 */
+    padding: 10px 20px; /* 内边距 */
+    border-radius: 5px; /* 圆角边框 */
+    display: block; /* 使链接填满整个li */
+    text-decoration: none; /* 去除下划线 */
+    transition: background-color 0.3s; /* 平滑过渡效果 */
+}
+
+li a:hover {
+    background-color: #0056b3; /* 鼠标悬浮时的背景色 */
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* “Future Assignments”和“Labs”标题样式 */
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    text-align: center;
+    color: #2c3e50;
+    margin: auto;
+    font-size: 2em
+}
+.container {
+    width: 80%;
+    max-width: 1200px; /* 设置一个最大宽度 */
+    margin: 0 auto; /* 居中对齐 */
+    padding: 0 20px; /* 添加内边距 */
+    box-sizing: border-box; /* 确保宽度包含内边距和边框 */
+}
+
+/* 确保图片不会超出容器宽度 */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    h1, h2 {
+        font-size: 1.5em;
+    }
+
+    /* 调整列表项在小屏幕上的布局 */
+    ul li {
+        padding: 10px;
+    }
+}
+
+#p5-sketch1 {
+    background-color: #f8f8f8;
+    border: 1px solid #eaeaea;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px; /* 圆角边框 */
+    width: 415px;
+    height: 415px;
+    margin: 0 auto;
+}
+
+#p5-sketch2 {
+    background-color: #f8f8f8;
+    border: 1px solid #eaeaea;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px; /* 圆角边框 */
+    width: 415px;
+    height: 415px;
+    margin: 0 auto;
+}
+
+/* 媒体查询，适应不同屏幕大小 */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+}
