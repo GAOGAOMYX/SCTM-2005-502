@@ -1,5 +1,6 @@
 // script.js
 console.log("Script loaded successfully!");
+console.log("Wuyuan Gao");
 
 let angle = 0;
 let spacing = 10;
